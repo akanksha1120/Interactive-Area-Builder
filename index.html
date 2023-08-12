@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Area Builder</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid" id="grid"></div>
+        <div class="shelf" id="shelf">
+            <div class="square"></div>
+        </div>
+        <div class="info">
+            <p>Area: <span id="area">0</span></p>
+            <p>Perimeter: <span id="perimeter">0</span></p>
+        </div>
+        <div class="user-input">
+            <label for="expectedArea">Expected Area:</label>
+            <input type="number" id="expectedArea" placeholder="Enter expected area">
+            <label for="expectedPerimeter">Expected Perimeter:</label>
+            <input type="number" id="expectedPerimeter" placeholder="Enter expected perimeter">
+            <button id="submit">Submit</button>
+            <button id="reset">Reset</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
